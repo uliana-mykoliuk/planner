@@ -2,32 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Galada", cursive;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.perspective-1 {
+  -webkit-perspective: 1px;
+  perspective: 1px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.card {
+  background-image: linear-gradient(#191970, #695acd86);
+}
+
+.card-container {
+  background-image: url("../assets/card-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-pink-cloud {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../assets/pink-cloud-2.png");
+}
+
+.text-night-sky {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../assets/card-bg.jpg");
+}
+
+.footer-bg {
+  background-image: url("../assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-header {
+  background: linear-gradient(#191970, #1919708e 70%, #19197000);
+}
+
+.bg-contact-us {
+  background-image: url("../assets/footer-bg.png");
 }

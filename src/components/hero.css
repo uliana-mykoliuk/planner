@@ -1,0 +1,39 @@
+/* hero.css */
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.planet {
+  background-image: url("../assets/moon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../assets/pink-cloud.png");
+}
+
+@keyframes rotateSky {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.sky {
+  background-image: url("../assets/bg-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: rotateSky 16s linear infinite;
+}
