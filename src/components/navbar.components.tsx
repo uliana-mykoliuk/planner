@@ -11,14 +11,14 @@ export interface NavLink {
 
 const Header: React.FC = () => {
   return (
-    <header className="grid grid-cols-3 fixed top-0 z-[5] justify-start items-center py-[8px] px-[50px] bg-header w-full">
+    <header className="grid grid-cols-3 fixed top-0 z-[5] justify-start items-center py-[8px] px-[50px] bg-gradient-to-r from-transparent to-main-blue w-full">
       <div className="flex items-center">
         <Image
           alt=""
           src={Logo}
           className="w-[36px] h-[36px] rounded-[50%] mr-[8px]"
         />
-        <h3 className="text-white text-[24px] mr-[30px]">Planner app</h3>
+        <h3 className="text-main-purple text-[24px] mr-[30px]">Planner app</h3>
       </div>
       <nav className="flex gap-x-[30px] list-none m-0 p-0 justify-self-center">
         {navLinks.map((link) => (
@@ -32,9 +32,9 @@ const Header: React.FC = () => {
 
       <Link
         href="/sign-in"
-        className="justify-self-end text-[#fff] bg-pink-clouds rounded-[5px]"
+        className="justify-self-end text-[#fff] bg-main-purple rounded-[5px]"
       >
-        <div className="card-2 px-[16px] py-[8px] rounded-[5px]">Sign In / Sign Up</div>
+        <div className="px-[16px] py-[8px] rounded-[5px]">Sign In / Sign Up</div>
       </Link>
     </header>
   );

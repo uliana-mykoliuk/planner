@@ -12,14 +12,21 @@ p {
   background-size: contain;
 }
 
+.text-night-sky {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../assets/card-bg.jpg");
+}
+
 h1 {
   font-family: "Galada", cursive;
   font-weight: 400;
   font-style: normal;
-  background-clip: text;
+  /* background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: url("../assets/pink-cloud-2.png");
+  background-image: url("../assets/pink-cloud.png"); */
 }
 
 @keyframes rotateSky {
@@ -29,6 +36,10 @@ h1 {
   to {
     transform: rotate(0deg);
   }
+}
+
+.card-2 {
+  background-image: linear-gradient(#19197095, #695acd86);
 }
 
 .sky {

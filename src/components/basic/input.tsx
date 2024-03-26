@@ -22,13 +22,13 @@ const InputField: React.FC<InputFieldProps> = ({
   errors,
   type,
 }) => {
-  const inputClassName = `mt-[4px] outline-none rounded-[5px] bg-[#CDC5FF] py-[6px] px-[12px] text-[14px] text-[#191970] placeholder:text-[#19197095] placeholder:font-thin ${
+  const inputClassName = `mt-[4px] outline-none rounded-[5px] bg-[#CDC5FF] py-[6px] px-[12px] text-[14px] text-main-blue placeholder:text-[#19197095] placeholder:font-thin ${
     className || ""
   }`;
 
   return (
     <div className="w-full grid">
-      <label htmlFor={id} className="text-[#191970] block text-[14px]">
+      <label htmlFor={id} className="text-main-blue block text-[14px]">
         {label}
       </label>
       <Field

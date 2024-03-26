@@ -6,7 +6,7 @@ export const BUTTON_TYPE_CLASSES = {
 const getButton = (buttonType = BUTTON_TYPE_CLASSES.base) =>
   ({
     [BUTTON_TYPE_CLASSES.base]:
-      "py-[8px] text-[#FFD1DC] bg-gradient-to-r from-[#191970] to-[#6A5ACD] rounded-[5px] px-[16px]",
+      "py-[8px] text-main-pink bg-gradient-to-r from-main-blue to-main-purple rounded-[5px] px-[16px]",
     [BUTTON_TYPE_CLASSES.google]:
       "bg-[#4285f4] py-[8px] text-white rounded-[5px] px-[16px]",
   }[buttonType]);

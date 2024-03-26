@@ -20,13 +20,13 @@ const ContactUs = () => {
     actions.setSubmitting(false);
   };
   return (
-    <div className="bg-[#191970] ">
+    <div className="bg-main-blue ">
       <div className="px-[50px] py-[100px]">
         <h2 className="text-pink-cloud text-center text-[48px] mb-[50px]">
           Contact Us
         </h2>
         <div className="bg-white max-w-[980px] mx-auto rounded-[20px] pt-[40px] pb-[60px]">
-          <p className="text-center text-[#191970]">
+          <p className="text-center text-main-blue">
             Have any questions or suggestions? Feel free to contact me.
           </p>
           <Formik
@@ -58,7 +58,7 @@ const ContactUs = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full mt-[30px] py-[8px] text-[#FFD1DC] bg-gradient-to-r from-[#191970] to-[#6A5ACD] rounded-[5px]"
+                  className="w-full mt-[30px] py-[8px] text-main-pink bg-gradient-to-r from-main-blue to-main-purple rounded-[5px]"
                 >
                   Submit
                 </button>

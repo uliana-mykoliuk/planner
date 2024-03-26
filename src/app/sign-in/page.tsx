@@ -22,7 +22,7 @@ export default function SignIn() {
         <div className="h-full card flex items-center justify-center">
           <div className="bg-white p-[50px] rounded-[20px] max-w-[980px] w-full grid grid-cols-2 gap-x-[30px] min-h-[85%]">
             <div>
-              <Link href="/" className="text-[#6A5ACD]">
+              <Link href="/" className="text-main-purple">
                 &larr; Back
               </Link>
               <Image

@@ -48,12 +48,12 @@ const SignUpForm = ({ changeAuthType }) => {
   return (
     <div>
       <h1 className="text-[36px] text-center text-night-sky">Sign Up</h1>
-      <div className="text-center text-[#191970]">
+      <div className="text-center text-main-blue">
         Already have an account? <br />
         <button
           type="button"
           onClick={() => changeAuthType()}
-          className="text-[#6A5ACD] outline-none bg-transparent"
+          className="text-main-purple outline-none bg-transparent"
         >
           Sign in with your email and password
         </button>
@@ -112,7 +112,7 @@ const SignUpForm = ({ changeAuthType }) => {
             <button
               type="button"
               onClick={signInWithGoogle}
-              className="text-[#6A5ACD] outline-none bg-transparent w-full mt-[30px]"
+              className="text-main-purple outline-none bg-transparent w-full mt-[30px]"
             >
               Sign Up With Google
             </button>
