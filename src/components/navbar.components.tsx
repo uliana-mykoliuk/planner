@@ -9,9 +9,9 @@ export interface NavLink {
   label: string;
 }
 
-const Navbar: React.FC = () => {
+const Header: React.FC = () => {
   return (
-    <nav className="grid grid-cols-3 fixed top-0 z-[5] justify-start items-center py-[8px] px-[50px] bg-header w-full">
+    <header className="grid grid-cols-3 fixed top-0 z-[5] justify-start items-center py-[8px] px-[50px] bg-header w-full">
       <div className="flex items-center">
         <Image
           alt=""
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         />
         <h3 className="text-white text-[24px] mr-[30px]">Planner app</h3>
       </div>
-      <ul className="flex gap-x-[30px] list-none m-0 p-0 justify-self-center">
+      <nav className="flex gap-x-[30px] list-none m-0 p-0 justify-self-center">
         {navLinks.map((link) => (
           <li key={link.href} className="">
             <Link href={link.href} className="text-[#FFf]">
@@ -28,9 +28,16 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
         ))}
-      </ul>
-    </nav>
+      </nav>
+
+      <Link
+        href="/sign-in"
+        className="justify-self-end text-[#fff] bg-pink-clouds rounded-[5px]"
+      >
+        <div className="card-2 px-[16px] py-[8px] rounded-[5px]">Sign In / Sign Up</div>
+      </Link>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;

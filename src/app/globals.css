@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Galada&family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Galada&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
@@ -26,6 +25,10 @@ h5 {
 
 .card {
   background-image: linear-gradient(#191970, #695acd86);
+}
+
+.card-2 {
+  background-image: linear-gradient(#19197095, #695acd86);
 }
 
 .card-container {
@@ -55,9 +58,22 @@ h5 {
 }
 
 .bg-header {
-  background: linear-gradient(#191970, #1919708e 70%, #19197000);
+  /* background: linear-gradient(#191970, #1919708e 70%, #19197000); */
+  background-color: #191970;
+}
+
+.bg-pink-clouds {
+  background-image: url("../assets/pink-cloud.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-contact-us {
   background-image: url("../assets/footer-bg.png");
+}
+
+.sign-in-bg {
+  background-image: url("../assets/clouds-dark-night-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

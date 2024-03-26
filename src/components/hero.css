@@ -19,7 +19,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: url("../assets/pink-cloud.png");
+  background-image: url("../assets/pink-cloud-2.png");
 }
 
 @keyframes rotateSky {
@@ -36,4 +36,8 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   animation: rotateSky 16s linear infinite;
+}
+
+.h-custom-hero {
+  height: calc(100vh - 56px);
 }
