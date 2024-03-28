@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.text-galada {
+  font-family: "Galada", cursive;
+}
+
+.inverted-border-radius {
+  border-radius: 25px 0 0 25px; /* This line was updated */
+}
+
+.inverted-border-radius::after {
+  content: "";
+  position: absolute;
+
+  background-color: #191970;
+  bottom: -65px;
+  height: 65px;
+  width: 25px;
+  border-top-right-radius: 25px;
+  right: 0px;
+  box-shadow: 0 -25px 0 0 #fff;
+}
+
+.inverted-border-radius::before {
+  content: "";
+  position: absolute;
+
+  background-color: #191970;
+  top: -65px;
+  height: 65px;
+  width: 25px;
+  border-bottom-right-radius: 25px;
+  right: 0px;
+  box-shadow: 0 40px 0 0 #fff;
+}

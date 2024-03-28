@@ -32,9 +32,9 @@ const Header: React.FC = () => {
 
       <Link
         href="/sign-in"
-        className="justify-self-end text-[#fff] bg-main-purple rounded-[5px]"
+        className="justify-self-end text-[#fff] bg-main-purple px-[16px] py-[8px] rounded-[5px]"
       >
-        <div className="px-[16px] py-[8px] rounded-[5px]">Sign In / Sign Up</div>
+        Sign In / Sign Up
       </Link>
     </header>
   );

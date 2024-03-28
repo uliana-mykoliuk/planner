@@ -2,7 +2,7 @@ import Card from "./card.components";
 
 const Features = () => {
   return (
-    <div className="py-[100px] max-w-[980px] mx-auto">
+    <div id="features" className="py-[100px] max-w-[980px] mx-auto">
       <h2 className="text-[48px] text-center text-night-sky mb-[50px]">
         Features
       </h2>

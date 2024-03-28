@@ -20,7 +20,7 @@ const ContactUs = () => {
     actions.setSubmitting(false);
   };
   return (
-    <div className="bg-main-blue ">
+    <div id="contact-us" className="bg-main-blue ">
       <div className="px-[50px] py-[100px]">
         <h2 className="text-pink-cloud text-center text-[48px] mb-[50px]">
           Contact Us
